@@ -66,7 +66,7 @@ jobs:
           sudo chown -R 12021:$(id -g) /tmp/renovate
 
       - name: Renovate
-        uses: renovatebot/github-action@502904f1cefdd70cba026cb1cbd8c53a1443e91b # v44.1.0
+        uses: renovatebot/github-action@8cb0d4a6ab7d8bb90460a005f7bd33b80dd07ca8 # v44.2.5
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'debug' }}
           RENOVATE_DRY_RUN: ${{ inputs.dryRun == true }}
